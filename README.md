@@ -1,3 +1,3 @@
 # P2P game
 
-* just serve the `site` folder
+* just serve this folder

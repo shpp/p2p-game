@@ -1,5 +1,0 @@
-{
-  "from": "fi-fo-nginx-phpfpm",
-  "volumes": [],
-  "cacheable-environment": []
-}
