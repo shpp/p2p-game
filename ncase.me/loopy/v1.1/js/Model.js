@@ -66,7 +66,7 @@ function Model(loopy){
 				i--; // move index back, coz it's been killed
 			}
 		}
-		
+
 	};
 
 
@@ -139,7 +139,7 @@ function Model(loopy){
 
 		// Remove label
 		self.labels.splice(self.labels.indexOf(label),1);
-		
+
 	};
 
 
@@ -163,8 +163,8 @@ function Model(loopy){
 
 	// SHOULD WE DRAW?
 	var drawCountdownFull = 60; // two-second buffer!
-	var drawCountdown = drawCountdownFull; 
-	
+	var drawCountdown = drawCountdownFull;
+
 	// ONLY IF MOUSE MOVE / CLICK
 	subscribe("mousemove", function(){ drawCountdown=drawCountdownFull; });
 	subscribe("mousedown", function(){ drawCountdown=drawCountdownFull; });
@@ -269,7 +269,7 @@ function Model(loopy){
 				Math.round(node.x),
 				Math.round(node.y),
 				node.init,
-				encodeURIComponent(encodeURIComponent(node.label)),
+				encodeURIComponent(node.label),
 				node.hue
 			]);
 		}
@@ -307,7 +307,7 @@ function Model(loopy){
 			labels.push([
 				Math.round(label.x),
 				Math.round(label.y),
-				encodeURIComponent(encodeURIComponent(label.text))
+				encodeURIComponent(label.text)
 			]);
 		}
 		data.push(labels);
@@ -324,9 +324,7 @@ function Model(loopy){
 	};
 
 	self.deserialize = function(dataString){
-
 		self.clear();
-
 		var data = JSON.parse(dataString);
 
 		// Get from array!
@@ -343,7 +341,8 @@ function Model(loopy){
 				x: node[1],
 				y: node[2],
 				init: node[3],
-				label: decodeURIComponent(node[4]),
+				label: node[4],
+				// label: decodeURIComponent(node[4]),
 				hue: node[5]
 			});
 		}
@@ -367,7 +366,8 @@ function Model(loopy){
 			self.addLabel({
 				x: label[0],
 				y: label[1],
-				text: decodeURIComponent(label[2])
+				text: label[2]
+				// text: decodeURIComponent(label[2])
 			});
 		}
 

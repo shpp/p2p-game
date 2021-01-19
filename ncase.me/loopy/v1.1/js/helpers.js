@@ -139,7 +139,7 @@ function _addMouseEvents(target, onmousedown, onmousemove, onmouseup){
 		onmousedown(_fakeEvent);
 	};
 	var _onmousemove = function(event){
-		
+
 		// Mouse position
 		var _fakeEvent = {};
 		if(event.changedTouches){
@@ -197,7 +197,7 @@ function _getBounds(points){
 		left:left, right:right, top:top, bottom:bottom,
 		width:width, height:height
 	};
-	
+
 }
 
 function _translatePoints(points, dx, dy){
@@ -241,7 +241,7 @@ function _configureProperties(self, config, properties){
 }
 
 function _isPointInCircle(x, y, cx, cy, radius){
-	
+
 	// Point distance
 	var dx = cx-x;
 	var dy = cy-y;
@@ -285,10 +285,10 @@ function _getParameterByName(name){
 
 
 function _blendColors(hex1, hex2, blend){
-	
+
 	var color = "#";
 	for(var i=0; i<3; i++) {
-		
+
 		// Into numbers...
 		var sub1 = hex1.substring(1+2*i, 3+2*i);
 		var sub2 = hex2.substring(1+2*i, 3+2*i);

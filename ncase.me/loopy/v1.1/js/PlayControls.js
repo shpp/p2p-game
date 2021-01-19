@@ -64,7 +64,7 @@ function PlayControls(loopy){
 			buttonDOM.style.left = "70px";
 			buttonDOM.style.top = "0px";
 
-/*			// REMIX BUTTON 
+/*			// REMIX BUTTON
 			var buttonDOM = page.addComponent(new PlayButton({
 				icon: 3,
 				label: "Remix",
@@ -120,7 +120,7 @@ function PlayControls(loopy){
 		self.addPage("Player", page);
 
 	})();
-	
+
 }
 
 function PlayButton(config){
@@ -157,7 +157,7 @@ function PlaySlider(config){
 
 	// Slow & Fast Icons
 	var img = new Image();
-	img.src = "css/icons/speed_slow.png";
+	img.src = "https://ncase.me/loopy/v1.1/css/icons/speed_slow.png";
 	img.width = 20;
 	img.height = 15;
 	img.style.position = "absolute";
@@ -165,7 +165,7 @@ function PlaySlider(config){
 	img.style.top = "-2px";
 	self.dom.appendChild(img);
 	var img = new Image();
-	img.src = "css/icons/speed_fast.png";
+	img.src = "https://ncase.me/loopy/v1.1/css/icons/speed_fast.png";
 	img.width = 20;
 	img.height = 15;
 	img.style.position = "absolute";

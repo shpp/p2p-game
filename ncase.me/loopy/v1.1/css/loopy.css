@@ -23,16 +23,16 @@ canvas{
 	width: 100%;
 }
 #canvasses[cursor=ink]{
-	cursor: url('cursors/ink.png') 0 30, auto;
+	cursor: url('https://ncase.me/loopy/v1.1/css/cursors/ink.png') 0 30, auto;
 }
 #canvasses[cursor=drag]{
-	cursor: url('cursors/drag.png') 15 15, auto;
+	cursor: url('https://ncase.me/loopy/v1.1/css/cursors/drag.png') 15 15, auto;
 }
 #canvasses[cursor=erase]{
-	cursor: url('cursors/erase.png') 5 25, auto;
+	cursor: url('https://ncase.me/loopy/v1.1/css/cursors/erase.png') 5 25, auto;
 }
 #canvasses[cursor=label]{
-	cursor: url('cursors/label.png') 15 15, auto;
+	cursor: url('https://ncase.me/loopy/v1.1/css/cursors/label.png') 15 15, auto;
 }
 
 
@@ -76,7 +76,7 @@ canvas{
 .play_button_icon{
 	width: 25px;
 	height: 25px;
-	background-image: url(icons/controls.png);
+	background-image: url(https://ncase.me/loopy/v1.1/css/icons/controls.png);
 	display: inline-block;
 	background-size: 400% 100%;
 }
@@ -100,7 +100,7 @@ div[big=yes] .play_button_label{
 
 
 /**********
- TOOLBAR 
+ TOOLBAR
 **********/
 
 #toolbar{
@@ -134,7 +134,7 @@ div[big=yes] .play_button_label{
 }
 
 /**********
- SIDEBAR 
+ SIDEBAR
 **********/
 
 #sidebar{
@@ -193,11 +193,11 @@ div[big=yes] .play_button_label{
 }
 .component_input{
 	border: none;
-	
+
 	width:calc(100% - 10px);
 	height:22px;
 	padding: 5px;
-	
+
 	font-size: 20px;
 	font-weight: 100;
 }
